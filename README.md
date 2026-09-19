@@ -44,7 +44,7 @@ The project uses ASP.NET Core Controllers, Entity Framework Core, and SQLite for
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/ZEB1405/FitnessAPI>
 cd FitnessApi
 ```
 
