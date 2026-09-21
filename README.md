@@ -1,8 +1,10 @@
-# Fitness API
+# Fitness API — ASP.NET Core REST API for Weight & Fitness Tracking
 
-A REST API for tracking body weight and fitness-related progress.
+A REST API built with C# and ASP.NET Core for tracking body weight and fitness-related progress.
 
-This project is currently being developed as part of a developer course assignment focused on building REST APIs with ASP.NET Core Controllers. It is also intended to serve as the backend foundation for a future personal fitness tracking application.
+The API uses ASP.NET Core Controllers, Entity Framework Core, and SQLite to provide a persistent backend for weight tracking applications. It supports creating, retrieving, sorting, and deleting weight entries through a RESTful HTTP API.
+
+This project is currently being developed as part of a developer course assignment and is intended to serve as the backend foundation for a future personal fitness tracking application.
 
 ## Current Status
 
@@ -27,7 +29,8 @@ The project uses ASP.NET Core Controllers, Entity Framework Core, and SQLite for
 
 * C#
 * .NET 10
-* ASP.NET Core
+* ASP.NET Core Web API
+* ASP.NET Core Controllers
 * Entity Framework Core
 * SQLite
 * Swagger / OpenAPI
@@ -44,7 +47,7 @@ The project uses ASP.NET Core Controllers, Entity Framework Core, and SQLite for
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone <https://github.com/ZEB1405/FitnessAPI>
+git clone https://github.com/ZEB1405/FitnessAPI
 cd FitnessApi
 ```
 
