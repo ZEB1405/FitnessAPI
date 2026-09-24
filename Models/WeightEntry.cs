@@ -8,8 +8,9 @@ namespace FitnessApi.Models;
     public class WeightEntry
     {
         public int Id { get; set; }
-        [Range(0, 1000, ErrorMessage = "Weight must be between 0 and 1000.")]
+        [Range(1, 600, ErrorMessage = "Weight must be between 1 and 600.")]
         public decimal Weight { get; set; }
-        public DateTime RecordedAt { get; set; }
+        [Required]
+        public DateTime? RecordedAt { get; set; }
         public string? Notes { get; set; }
     }

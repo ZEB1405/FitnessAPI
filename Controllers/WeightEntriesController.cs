@@ -72,6 +72,11 @@ public class WeightEntriesController : ControllerBase
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<WeightEntry>> CreateWeightEntry(WeightEntry weightEntry)
     {
+        if (weightEntry.RecordedAt > DateTime.UtcNow)
+        {
+            return BadRequest("RecordedAt cannot be in the future.");
+        }
+
         _context.WeightEntries.Add(weightEntry);
         await _context.SaveChangesAsync();
         return CreatedAtAction(nameof(GetWeightEntry), new { id = weightEntry.Id}, weightEntry);

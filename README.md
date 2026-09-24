@@ -150,7 +150,7 @@ The response contains the newly created weight entry and a link to retrieve it b
 
 Weight entries validate the `weight` property using data annotations.
 
-Weight must be between `0` and `1000`.
+Weight must be between `1` and `600`.
 
 Invalid input returns:
 
